@@ -3,7 +3,7 @@ using ICities;
 
 namespace RainFirefighting
 {
-    public class RainPlusMod : IUserMod
+    public class ModIdentity : IUserMod
     {
         public string Name => "Rain Firefighting";
 
@@ -11,7 +11,7 @@ namespace RainFirefighting
         {
             get
             {
-                return "The modification allows the rain to put out fires."
+                return "The rain is able to extinguish the fire over a period of time."
 #if DEBUG
                                                     + " v." + Assembly.GetExecutingAssembly().GetName().Version
 #endif
